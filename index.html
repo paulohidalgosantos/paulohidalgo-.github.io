@@ -1,65 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/pauloico.ico" type="image/x-icon">
-    <title>Portfólio | Paulo Hidalgo - Programador e Engenheiro Eletricista</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script src="script.js" defer></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="imagens/pauloico.ico" type="image/x-icon">
+  <title>Portfólio | Paulo Hidalgo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Criação das imagens -->
-    <a href="https://wa.me/5513981987571"> <img class="estilo7" alt="whatsaap" title="whatsaap" width="60px" src="imagens/logo whatsaap.png" alt=""></a>
+  <aside class="menu-lateral">
+    <div class="foto-container">
+      <img src="imagens/paulo.jpeg" alt="Foto de Paulo Hidalgo" class="foto-perfil" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-    <!-- Criação do menu -->
-    <div id="pages">
-        <ul>
-           <br><br><br><br><br><br><br><br><br><br><br>
-           <br>
-           <li><a class="estilo1" href="index.html">Página Principal</a></li><br>
-           <li><a class="estilo1" href="sobre.html">Sobre</a></li><br>
-           <li><a class="estilo1" href="contato.html">Contato</a></li><br>
-           <li><a class="estilo1" href="formação.html">Formação</a></li><br>
-           <li><a class="estilo1" href="trabalho.html">Trabalhos</a></li>
-       </ul>
-   </div>
+  <main>
+    <section id="home" class="secao home">
+        <div class="conteudo-home">
+        <h1><span class="digitando">Seja muito bem-vindo!</span></h1>
+        <p>Me chamo <strong>Paulo Hidalgo</strong>.</p>
+        <h2>Desenvolvedor | Engenheiro Eletricista</h2>
+        <a href="documentos/Paulo Hidalgo Santos_CV.pdf" class="btn-cv" download>📄 Baixar Currículo</a>
+      </div>
+    </section>
 
-    <!-- Criação do Curriculo baixável -->
-    <a class="estilo2" href="documentos/Paulo Hidalgo Santos_CV.pdf" download="">Download CV</a>
+    <section id="sobre" class="secao sobre">
+      <h2 class="secao-titulo-topo">Sobre Mim</h2>
+      <p>
+        Estudante em Tecnólogo em Análises e Desenvolvimento de sistemas na UNINTER. Formado em Engenharia Elétrica pela Unisanta, com curso técnico de Eletricista de Manutenção. Experiência em manutenção de computadores, suporte técnico, automação, controle de qualidade em Engenharia (NR-10 e NR-12), elaboração de relatórios e laudos técnicos.
+      </p>
+    </section>
 
-    <!-- Criação dos textos -->
-    <!-- Título da Página  -->
-    <br><br>
-    <div id="titulo">Portfólio</div>
-    <!-- Texto introdutório -->
-    <h1>Seja muito bem vindo!</h1>
-    <h4>Eu sou Paulo Hidalgo Santos</h4>
-    <h2>Desenvolvedor | Engenheiro Eletricista</h2>
+    <section id="formacao" class="secao formacao">
+      <h2 class="secao-titulo-topo">Formação</h2>
+      <ul class="lista-formacao">
+        <li>Tecnologia em Análises e Desenvolvimento de Sistemas <img src="imagens/logo programação.png" width="50"></li>
+        <li>Engenharia Elétrica - Unisanta <img src="imagens/logo engenharia.png" width="50"></li>
+        <li>Curso de Eletricista de Manutenção - SENAI <img src="imagens/logo senai.png" width="50"></li>
+        <li>Excel Intermediário <img src="imagens/logo excel.png" width="50"></li>
+      </ul>
+    </section>
 
-    <!-- Imagem Paulo -->
-    <img width="200px" class="estilo6" src="imagens/paulo.jpeg" id="paulo">
+    <section id="experiencia" class="secao experiencia">
+      <h2 class="secao-titulo-topo">Experiência</h2>
+      <ul class="lista-formacao">
+        <li>Técnico eletrônico - Copymar <img src="imagens/copymar.png" width="50"></li>
+        <li>Assistente de engenharia - Conerge <img src="imagens/conerge.png" width="50"></li>
+        <li>Auxiliar técnico de informática - ABVNet <img src="imagens/abvnet.png" width="50"></li>
+        <li>Auxiliar técnico de manutenção - Futura <img src="imagens/futura.png" width="50"></li>
+        <li>Aprendiz de manutenção elétrica - Citrosuco <img src="imagens/citrosuco.png" width="50"></li>
+      </ul>
+    </section>
 
-    <!-- Menu Mobile -->
-     <div class="menu-mobile" id="menuMobile">
-        <div class="btn-fechar">
-            <img src="imagens/fechar.png" width="10%">
-        </div>
+    <section id="contato" class="secao contato">
+      <h2 class="secao-titulo-topo">Fale Comigo</h2>
+      <div class="contato-texto">
+        <p><strong>Localização:</strong> Santos / SP</p>
+        <p><strong>Telefone:</strong> (13) 98198-7571
+          <a href="https://wa.me/5513981987571"><img src="imagens/logo whatsaap.png" width="20"></a>
+        </p>
+        <p><strong>Email:</strong> paulo_hidalgo_santos@live.com
+          <a href="mailto:paulo_hidalgo_santos@live.com"><img src="imagens/logo email.png" width="20"></a>
+        </p>
+        <p><strong>Siga-me:</strong>
+          <a href="https://github.com/paulohidalgosantos"><img src="imagens/logo github.png" width="24"></a>
+          <a href="https://www.linkedin.com/in/paulohidalgo/"><img src="imagens/logo linkedin.png" width="20"></a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-        <div class="item-mobile">
-            <ul >
-               <li class="lista-mobile"><a class="estilo1" href="index.html">Página Principal</a>
-               <li class="lista-mobile"><a class="estilo1" href="sobre.html">Sobre</a></li>
-               <li class="lista-mobile"><a class="estilo1" href="contato.html">Contato</a></li>
-               <li class="lista-mobile"><a class="estilo1" href="formação.html">Formação</a></li>
-               <li class="lista-mobile"><a class="estilo1" href="trabalho.html">Trabalhos</a></li>
-           </ul>
-       </div>
-     </div>
-     <a class="abrir-menu" id="abrir"><img src="imagens/logo menu.png" width="60px"></a>
-    
-     <div class="overlay-menu"></div>
-
+  <script src="script.js"></script>
 </body>
 </html>

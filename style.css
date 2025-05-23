@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #232424, #d9e2ec);
+  overflow: hidden;
+}
+
+.menu-lateral {
+  width: 250px;
+  background-color: #1f1f1f;
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-container {
+  padding: 10px;
+}
+
+.menu-lateral img.foto-perfil {
+  width: 150px;
+  height: 180px;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  border: 4px solid #012485;
+  box-shadow: 0 0 10px #00aaff;
+  margin-bottom: 30px;
+}
+
+.menu-lateral nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.menu-lateral nav ul li {
+  margin-bottom: 15px;
+}
+
+.menu-lateral nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-lateral nav ul li a:hover {
+  color: #00aaff;
+}
+
+main {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.secao {
+  height: 100vh;
+  padding: 80px 30px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.secao-titulo-topo {
+  font-size: 2em;
+  color: #012485;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.secao.home {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.conteudo-home p, .conteudo-home h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.btn-cv {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #012485;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: #005ac1;
+}
+
+.sobre, .formacao, .experiencia {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.contato {
+  align-items: flex-start;
+  padding: 120px 80px 60px 80px;
+  text-align: left;
+}
+
+.lista-formacao {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-formacao li {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2em;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.digitando {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(30, end), blink .75s step-end infinite;
+  border-right: 2px solid #000;
+  max-width: 100%;
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}

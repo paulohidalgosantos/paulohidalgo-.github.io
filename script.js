@@ -1,5 +1,8 @@
-let btnMenu = document.getElementById('abrir')
-let menu = document.getElementById('menuMobile')
-
-btnMenu.addEventListener('click',()=>{menu.classList.add('aberto')})
-menu.addEventListener('click',()=>{menu.classList.remove('aberto')})
+// Scroll suave para ancoragens
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const alvo = document.querySelector(link.getAttribute('href'));
+    alvo.scrollIntoView({ behavior: 'smooth' });
+  });
+});
