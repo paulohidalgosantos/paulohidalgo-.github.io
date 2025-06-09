@@ -1,83 +1,520 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="imagens/pauloico.ico" type="image/x-icon">
-  <title>Portfólio | Paulo Hidalgo</title>
+  <meta name="description" content="Paulo Hidalgo - Desenvolvedor e Engenheiro Eletricista. Portfólio com projetos em Java, Python e desenvolvimento de sistemas." />
+  <title>Paulo Hidalgo - Desenvolvedor | Engenheiro Eletricista</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="imagens/pauloico.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <aside class="menu-lateral">
-    <div class="foto-container">
-      <img src="imagens/paulo.jpeg" alt="Foto de Paulo Hidalgo" class="foto-perfil" />
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+          
+      <!-- Desktop Navigation -->
+      <div class="nav-menu">
+        <a href="#inicio" class="nav-link active" data-section="inicio">Inicial</a>
+        <a href="#sobre" class="nav-link" data-section="sobre">Sobre Mim</a>
+        <a href="#formacao" class="nav-link" data-section="formacao">Formação</a>
+        <a href="#experiencia" class="nav-link" data-section="experiencia">Experiência</a>
+        <a href="#motivacao" class="nav-link" data-section="motivacao">Motivação</a>
+        <a href="#trabalhos" class="nav-link" data-section="trabalhos">Trabalhos</a>
+        <a href="#habilidades" class="nav-link" data-section="habilidades">Habilidades</a>
+        <a href="#contato" class="nav-link" data-section="contato">Contato</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="mobile-menu-btn">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </aside>
 
-  <main>
-    <section id="home" class="secao home">
-        <div class="conteudo-home">
-        <h1><span class="digitando">Seja muito bem-vindo!</span></h1>
-        <p>Me chamo <strong>Paulo Hidalgo</strong>.</p>
-        <h2>Desenvolvedor | Engenheiro Eletricista</h2>
-        <a href="documentos/Paulo Hidalgo Santos_CV.pdf" class="btn-cv" download>📄 Baixar Currículo</a>
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu">
+      <a href="#inicio" class="mobile-nav-link" data-section="inicio">Inicial</a>
+      <a href="#sobre" class="mobile-nav-link" data-section="sobre">Sobre Mim</a>
+      <a href="#formacao" class="mobile-nav-link" data-section="formacao">Formação</a>
+      <a href="#experiencia" class="mobile-nav-link" data-section="experiencia">Experiência</a>
+      <a href="#motivacao" class="mobile-nav-link" data-section="motivacao">Motivação</a>
+      <a href="#trabalhos" class="mobile-nav-link" data-section="trabalhos">Trabalhos</a>
+      <a href="#habilidades" class="mobile-nav-link" data-section="habilidades">Habilidades</a>
+      <a href="#contato" class="mobile-nav-link" data-section="contato">Contato</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Olá, eu sou
+            <span class="hero-name">Paulo Hidalgo</span>
+          </h1>
+          <p class="hero-subtitle">Desenvolvedor | Engenheiro Eletricista</p>
+          <div class="hero-buttons">
+            <a href="#trabalhos" class="btn btn-primary">Ver Projetos</a>
+            <a href="#contato" class="btn btn-secondary">Entre em Contato</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/paulohidalgosantos" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/paulohidalgo/" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="mailto:paulo_hidalgo_santos@live.com" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.724l9.615-6.903h.749c.904 0 1.636.732 1.636 1.636z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-avatar">
+  <div class="avatar-circle">
+    <img src="imagens/paulo.jpeg" alt="Foto de Paulo Hidalgo" class="avatar-img">
+  </div>
+  <div class="avatar-glow"></div>
+</div>
+
       </div>
-    </section>
-
-    <section id="sobre" class="secao sobre">
-      <h2 class="secao-titulo-topo">Sobre Mim</h2>
-      <p>
-        Estudante em Tecnólogo em Análises e Desenvolvimento de sistemas na UNINTER. Formado em Engenharia Elétrica pela Unisanta, com curso técnico de Eletricista de Manutenção. Experiência em manutenção de computadores, suporte técnico, automação, controle de qualidade em Engenharia (NR-10 e NR-12), elaboração de relatórios e laudos técnicos.
-      </p>
-    </section>
-
-    <section id="formacao" class="secao formacao">
-      <h2 class="secao-titulo-topo">Formação</h2>
-      <ul class="lista-formacao">
-        <li>Tecnologia em Análises e Desenvolvimento de Sistemas <img src="imagens/logo programação.png" width="50"></li>
-        <li>Engenharia Elétrica - Unisanta <img src="imagens/logo engenharia.png" width="50"></li>
-        <li>Curso de Eletricista de Manutenção - SENAI <img src="imagens/logo senai.png" width="50"></li>
-        <li>Excel Intermediário <img src="imagens/logo excel.png" width="50"></li>
-      </ul>
-    </section>
-
-    <section id="experiencia" class="secao experiencia">
-      <h2 class="secao-titulo-topo">Experiência</h2>
-      <ul class="lista-formacao">
-        <li>Técnico eletrônico - Copymar <img src="imagens/copymar.png" width="50"></li>
-        <li>Assistente de engenharia - Conerge <img src="imagens/conerge.png" width="50"></li>
-        <li>Auxiliar técnico de informática - ABVNet <img src="imagens/abvnet.png" width="50"></li>
-        <li>Auxiliar técnico de manutenção - Futura <img src="imagens/futura.png" width="50"></li>
-        <li>Aprendiz de manutenção elétrica - Citrosuco <img src="imagens/citrosuco.png" width="50"></li>
-      </ul>
-    </section>
-
-    <section id="contato" class="secao contato">
-      <h2 class="secao-titulo-topo">Fale Comigo</h2>
-      <div class="contato-texto">
-        <p><strong>Localização:</strong> Santos / SP</p>
-        <p><strong>Telefone:</strong> (13) 98198-7571
-          <a href="https://wa.me/5513981987571"><img src="imagens/logo whatsaap.png" width="20"></a>
-        </p>
-        <p><strong>Email:</strong> paulo_hidalgo_santos@live.com
-          <a href="mailto:paulo_hidalgo_santos@live.com"><img src="imagens/logo email.png" width="20"></a>
-        </p>
-        <p><strong>Siga-me:</strong>
-          <a href="https://github.com/paulohidalgosantos"><img src="imagens/logo github.png" width="24"></a>
-          <a href="https://www.linkedin.com/in/paulohidalgo/"><img src="imagens/logo linkedin.png" width="20"></a>
-        </p>
+      <div class="scroll-indicator">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+        </svg>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-visual">
+          <div class="code-icon">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+            </svg>
+          </div>
+          <div class="visual-glow"></div>
+        </div>
+        <div class="about-text">
+          <h3 class="about-subtitle">Desenvolvedor em Formação</h3>
+          <p class="about-description">
+            Estudante de Análises e Desenvolvimento de Sistema com formação anterior em Engenharia Elétrica. 
+            Tenho como objetivo atuar como desenvolvedor júnior, aplicando conhecimentos em programação, 
+            automação e infraestrutura, com foco em aprendizado contínuo e entrega de soluções eficientes.
+          </p>
+          <p class="about-description">
+            Minha experiência em engenharia elétrica me proporcionou uma base sólida em lógica e resolução 
+            de problemas, competências que agora aplico no desenvolvimento de software. Busco sempre unir 
+            conhecimento técnico com criatividade para criar soluções inovadoras.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Anos de Experiência</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Formações</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="formacao" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Minha Formação</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Minha jornada acadêmica combina engenharia e tecnologia</p>
+      </div>
+      <div class="education-grid">
+        <div class="education-card">
+          <div class="education-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+            </svg>
+          </div>
+          <div class="education-content">
+            <h3 class="education-title">Tecnologia em Análises e Desenvolvimento de Sistemas</h3>
+            <p class="education-institution">Uninter</p>
+            <div class="education-meta">
+              <span class="education-year">2026</span>
+              <span class="education-status status-progress">Em andamento</span>
+            </div>
+          </div>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+            </svg>
+          </div>
+          <div class="education-content">
+            <h3 class="education-title">Engenharia Elétrica</h3>
+            <p class="education-institution">Universidade Santa Cecília</p>
+            <div class="education-meta">
+              <span class="education-year">2019</span>
+              <span class="education-status status-completed">Concluído</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experiencia" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experiência</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Trajetória profissional em diferentes áreas técnicas</p>
+      </div>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="experience-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
+            </svg>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Técnico eletrônico</h3>
+            <p class="experience-company">Copymar</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
+            </svg>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Assistente de engenharia</h3>
+            <p class="experience-company">Conerge</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
+            </svg>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Auxiliar técnico de informática</h3>
+            <p class="experience-company">ABVNet</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
+            </svg>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Auxiliar técnico de manutenção</h3>
+            <p class="experience-company">Futura</p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
+            </svg>
+          </div>
+          <div class="experience-content">
+            <h3 class="experience-title">Aprendiz de manutenção elétrica</h3>
+            <p class="experience-company">Citrosuco</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motivation Section -->
+  <section id="motivacao" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Minha Motivação</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="motivation-content">
+        <div class="motivation-text">
+          <div class="motivation-icons">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="heart-icon">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="zap-icon">
+              <path d="M7 2v11h3v9l7-12h-4l4-8z"/>
+            </svg>
+          </div>
+          <h3 class="motivation-subtitle">Paixão por Tecnologia</h3>
+          <p class="motivation-description">
+            Movido por curiosidade, guiado por lógica e focado em construir um futuro com código.
+          </p>
+        </div>
+        <div class="motivation-visual">
+          <div class="tech-grid">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="tech-icon">
+              <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="tech-icon">
+              <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="tech-icon">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="tech-icon">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="tech-icon">
+              <path d="M7 2v11h3v9l7-12h-4l4-8z"/>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="tech-icon">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <div class="motivation-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="trabalhos" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Meus Trabalhos</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Projetos e trabalhos desenvolvidos durante minha jornada</p>
+      </div>
+      <div class="projects-placeholder">
+        <div class="placeholder-card">
+          <div class="placeholder-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+            </svg>
+          </div>
+          <h3 class="placeholder-title">Projetos em Desenvolvimento</h3>
+          <p class="placeholder-description">
+            Estou trabalhando em projetos interessantes que demonstram minhas habilidades em programação. 
+            Em breve, você poderá ver alguns dos meus trabalhos aqui.
+          </p>
+          <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="habilidades" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Tecnologias e competências que domino e continuo aprimorando</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon skill-html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">HTML5</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-java">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Java</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-python">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Python</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-database">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Banco de Dados</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-excel">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Excel Intermediário</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-git">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Git e GitHub</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-communication">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Comunicação</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-teamwork">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 7H17c-.8 0-1.54.37-2.01.99l-2.98 3.67a.5.5 0 0 0 .39.84H14v8h6zM12.5 11.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5zm1.5 1h-2c-.83 0-1.5.67-1.5 1.5v6h5v-6c0-.83-.67-1.5-1.5-1.5zM5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm2 16v-7H9V9.5C9 8.67 8.33 8 7.5 8h-4C2.67 8 2 8.67 2 9.5V15h1.5v7h4z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Trabalho em Equipe</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon skill-problem">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Resolução de Problemas</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contato" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Estou sempre interessado em novas oportunidades e projetos desafiadores</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3 class="contact-subtitle">Vamos conversar!</h3>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <span>Santos / SP</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <span>(13) 98198-7571</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.724l9.615-6.903h.749c.904 0 1.636.732 1.636 1.636z"/>
+                </svg>
+              </div>
+              <span>paulo_hidalgo_santos@live.com</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <span>github.com/paulohidalgosantos</span>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </div>
+              <span>linkedin.com/in/paulohidalgo</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Mensagem</label>
+            <textarea id="message" name="message" rows="4" class="form-textarea" placeholder="Sua mensagem..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/5513981987571" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+    </svg>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://github.com/paulohidalgosantos" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/paulohidalgo/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="mailto:paulo_hidalgo_santos@live.com" class="footer-social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.724l9.615-6.903h.749c.904 0 1.636.732 1.636 1.636z"/>
+            </svg>
+          </a>
+        </div>
+        <p class="footer-text">© 2025 Paulo Hidalgo. Feito com ❤️ e muito café.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
